@@ -5,7 +5,7 @@
 			<span class="jd-online_user"  id="2"> Jaydeep <i class="light">&#8226;</i> </span>
 			<span class="jd-online_user" id="3"> Akbari <i class="light">&#8226;</i></span>
 		</div>			
-		<div class="jd-footer"><input placeholder="Serach"></div>
+		<div class="jd-footer"><input id="search_chat" placeholder="Serach"></div>
 	</div>
 	
 </div>
