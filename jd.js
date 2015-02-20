@@ -40,6 +40,20 @@ $(document).ready(function(){
 		$(box).find(".jd-body,.jd-footer").slideToggle();
 	});
 	
+	$("#search_chat").keyup(function(){
+		var val =  $.trim($(this).val());
+		$(".jd-online .jd-body").find("span").each(function(){
+			if ($(this).text().search(new RegExp(val, "i")) < 0 ) 
+			{
+                $(this).fadeOut(); 
+            } 
+			else 
+			{
+                $(this).show();              
+            }
+		});
+	});
+	
 	$("#jd-chat").delegate(".jd-user input","keyup",function(e){
 		if(e.keyCode == 13 )
 		{
